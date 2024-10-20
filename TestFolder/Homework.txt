@@ -1,0 +1,30 @@
+# 목표
+: 축구 데이터 수집하기 & MSSQL DB 연동하기
+
+# 범위
+: 프리미어 리그 1군
+
+# 수집 범위
+: 축구 팀, 24-25 시즌 선수, 감독
+
+# 숙제
+1) MSSQL 기본 Query 연습하기
+- SELECT (매일 연습해서 새로운 sql 파일로)
+- CREATE
+- INSERT
+
+INSERT INTO tablename (name, age)
+VALUES (hoon, 29), (been, 18), ... ;
+
+- DELETE
+- DROP
+
+2) 수집할 데이터 클래스 만들기 (Data 패키지 아래)
+
+팀 : id / 이름 / 리그 / 국가 / 구장
+코치 : id / 팀id / 이름 / 나이 / 국가 / 키 / 체중 
+선수 : id / 팀id / 이름 / 나이 / 국가 / 키 / 체중 / 포지션 / 번호
+코치, 선수 : 사람 클래스(이름, 나이, 국가, 키, 체중) 상속
+
+3) 매일 github push
+
